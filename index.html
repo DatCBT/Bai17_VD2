@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 17 - Van dung 2</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #f8f1f1; /* Nền nhẹ nhàng, tinh tế */
+            color: #4a4a4a;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://cdn.pixabay.com/photo/2016/08/24/00/24/paris-1615336_960_720.jpg'); /* Hình nền Paris */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        header {
+            background-color: rgba(255, 182, 193, 0.8); /* Màu hồng dịu dàng */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 2rem;
+            font-style: italic;
+        }
+
+        .content {
+            background-color: rgba(255, 255, 255, 0.8); /* Nền trắng nhẹ nhàng */
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            margin: 40px auto;
+            padding: 30px;
+            width: 80%;
+            max-width: 800px;
+            text-align: justify;
+        }
+
+        .content h2 {
+            color: #ff6f61;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+
+        .pseudo-element-examples {
+            margin: 20px 0;
+        }
+
+        .pseudo-element-examples p {
+            font-size: 1.2rem;
+        }
+
+        .example {
+            color: #ff6347;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .example::before {
+            content: "💖 "; /* Thêm biểu tượng trái tim trước văn bản */
+        }
+
+        .example::after {
+            content: " ✨"; /* Thêm hiệu ứng sau văn bản */
+        }
+
+        .first-line-example::first-line {
+            font-size: 1.5rem;
+            color: #ff1493;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: rgba(255, 182, 193, 0.8);
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 1rem;
+            border-top: 3px solid #f8d7da;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bai 17 - Van dung 2</h1>
+    </header>
+
+    <div class="content">
+        <h2>Tìm Hiểu Các Dạng Pseudo-element CSS</h2>
+        <p><strong>1. ::before</strong> - Dạng pseudo-element này cho phép bạn chèn nội dung vào phần tử trước nội dung chính của nó. Bạn có thể sử dụng nó để thêm các biểu tượng, ký hiệu hoặc phần tử trang trí trước một phần tử.</p>
+        <p>Ví dụ: Thêm biểu tượng trái tim trước văn bản như <span class="example">Tình yêu Paris</span> để tạo sự lãng mạn.</p>
+
+        <p><strong>2. ::after</strong> - Dạng pseudo-element này cho phép bạn chèn nội dung vào phần tử sau nội dung chính của nó. Bạn có thể sử dụng nó để thêm các phần tử trang trí hoặc hiệu ứng sau một phần tử.</p>
+        <p>Ví dụ: Thêm hiệu ứng ánh sáng sau từ <span class="example">Phố Paris</span> như một biểu tượng lãng mạn.</p>
+
+        <p><strong>3. ::first-line</strong> - Dạng pseudo-element này cho phép bạn áp dụng các định dạng CSS cho dòng đầu tiên của một phần tử chứa nội dung văn bản. Bạn có thể sử dụng nó để thay đổi kiểu chữ, khoảng cách dòng, hoặc các thuộc tính khác cho dòng đầu tiên.</p>
+        <p class="first-line-example">Đây là một ví dụ về dòng đầu tiên được thay đổi về kích thước và màu sắc.</p>
+    </div>
+</body>
+</html>
